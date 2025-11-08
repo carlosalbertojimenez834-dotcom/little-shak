@@ -147,7 +147,7 @@
 
     <!-- Hibiscus Aguachile Tostada Section --><section id="aguachile" class="w-full">
         <div class="full-width-image relative" style="background-image: url('https://i.imgur.com/1BnZaUL.jpeg');">
-            <!-- Tostada image goes here --></div>
+            <!--  --></div>
         <!-- New, extended persuasive description --><div class="py-8 px-4 sm:px-8 bg-primary-dark text-white">
             <p class="max-w-3xl mx-auto text-center text-lg sm:text-xl font-sans no-box">
                 Our tostada, topped with hibiscus flower aguachile, is not just a dish, it's an explosion of flavors that merges the freshness of the sea with the unique touch of sweet and sour. Every ingredient is carefully selected to transport you directly to the vibrant culinary culture of the coast. At LITTLE SHACK, every bite is a story, a tradition, and an invitation to celebrate good food with passion and joy.
@@ -156,8 +156,8 @@
     </section>
 
     <!-- Molcajete and Culture Section --><section id="molcajete" class="w-full">
-        <!-- Molcajete Image --><div class="full-width-image" style="background-image: url('https://i.imgur.com/i5vSxaD.jpeg');">
-            <!-- Molcajete image --></div>
+        <!--  --><div class="full-width-image" style="background-image: url('https://i.imgur.com/i5vSxaD.jpeg');">
+            </div>
         <div class="py-10 px-4 sm:px-8 bg-primary-dark">
             <!-- Heading is now white --><h2 class="text-3xl sm:text-4xl text-center text-white font-serif font-bold mb-4 no-box">
                 The Soul of the Coast in Texas
@@ -169,8 +169,8 @@
     </section>
 
     <!-- Seafood Tacos Section --><section id="tostadas" class="w-full">
-        <!-- Tostada Image --><div class="full-width-image" style="background-image: url('https://i.imgur.com/Ae1OjPL.jpeg');">
-            <!-- Tostada image --></div>
+        <!--  --><div class="full-width-image" style="background-image: url('https://i.imgur.com/Ae1OjPL.jpeg');">
+            </div>
         <!-- Sexy Seafood Tacos Text --><div class="py-8 px-4 sm:px-8 bg-primary-dark text-white">
             <p class="max-w-3xl mx-auto text-center text-lg sm:text-xl font-sans no-box">
                 Let yourself be seduced by our seafood tacos. Every tortilla is a temptation, filled with the ocean's most vibrant freshness and a touch of passion that ignites your senses. Prepare for an experience that goes beyond taste, a caress to the palate that will leave you craving more. Simply irresistible!
@@ -179,12 +179,56 @@
     </section>
 
     <!-- Fresh Seafood Section with Overlay --><section id="mariscos-costa" class="w-full relative">
-        <!-- Fresh Seafood Image --><div class="full-width-image" style="background-image: url('https://i.imgur.com/cF8vVHa.jpeg');">
-            <!-- Seafood image --></div>
+        <!--  --><div class="full-width-image" style="background-image: url('https://i.imgur.com/cF8vVHa.jpeg');">
+            </div>
         <div class="hero-overlay !h-full">
             <!-- Sexy Quality Text --><p class="text-2xl sm:text-3xl lg:text-5xl text-white font-serif italic font-extrabold tracking-wider no-box text-center drop-shadow-xl">
                 Our quality is an eternal romance: fresh ingredients, passion in every dish, and a flavor that will make you fall in love.
             </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-12 px-4 sm:px-8 bg-secondary-blue">
+        <div class="max-w-xl mx-auto">
+            <h2 class="text-4xl text-white font-bebas-neue tracking-widest text-center mb-6">CONTACT US</h2>
+            <p class="text-center text-gray-300 mb-8">Send us your questions, comments, or requests. We will get back to you as soon as possible.</p>
+
+            <form id="contactForm" class="space-y-4 p-6 bg-primary-dark rounded-xl shadow-2xl border border-accent-gold/20" onsubmit="submitContactForm(event)">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 rounded-lg bg-secondary-blue border border-gray-600 focus:border-accent-gold focus:ring-accent-gold text-white shadow-sm transition">
+                </div>
+
+                <!-- Phone & Email (Responsive Grid) -->
+                <div class="sm:grid sm:grid-cols-2 sm:gap-4">
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-300">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-4 py-2 rounded-lg bg-secondary-blue border border-gray-600 focus:border-accent-gold focus:ring-accent-gold text-white shadow-sm transition">
+                    </div>
+                
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 rounded-lg bg-secondary-blue border border-gray-600 focus:border-accent-gold focus:ring-accent-gold text-white shadow-sm transition">
+                    </div>
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 rounded-lg bg-secondary-blue border border-gray-600 focus:border-accent-gold focus:ring-accent-gold text-white shadow-sm transition"></textarea>
+                </div>
+
+                <!-- Response Message Box (for feedback) -->
+                <div id="response-message" class="hidden p-3 rounded-lg text-sm font-medium transition duration-300 text-center"></div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full flex items-center justify-center space-x-2 py-3 px-4 border border-transparent rounded-full shadow-lg text-lg font-bold text-white bg-custom-red hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50 transition duration-300 uppercase">
+                    Submit Message
+                    <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.842 5.228A2 2 0 0012 14c.737 0 1.432-.23 2.158-.772L21 8m-6 10H8a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2z"></path></svg>
+                </button>
+            </form>
         </div>
     </section>
 
@@ -375,6 +419,45 @@
                 `;
                 listContainer.appendChild(div);
             });
+        }
+
+        /**
+         * Handles the contact form submission.
+         * Since there is no backend, it simulates the submission and shows a success message.
+         */
+        function submitContactForm(event) {
+            event.preventDefault();
+            const form = event.target;
+            const messageBox = document.getElementById('response-message');
+            const data = {
+                name: form.name.value,
+                phone: form.phone.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            // Simulated email target
+            const emailTarget = 'littleshackinc@gmail.com';
+
+            console.log('--- Form Submission Simulation ---');
+            console.log(`Simulated sending contact message to: ${emailTarget}`);
+            console.log('Data:', data);
+            console.log('----------------------------------');
+
+            // Display success message in the UI (in Spanish)
+            messageBox.classList.remove('hidden', 'bg-red-500/20');
+            messageBox.classList.add('bg-green-500/20', 'text-green-300');
+            // Updated success message to Spanish
+            messageBox.textContent = `¡Mensaje simulado enviado! Un miembro del equipo te contactará en ${data.email}. (Destino: ${emailTarget})`;
+            
+            // Clear the form after a simulated successful submission
+            form.reset();
+
+            // Hide the message after a few seconds
+            setTimeout(() => {
+                messageBox.classList.add('hidden');
+                messageBox.classList.remove('bg-green-500/20', 'text-green-300');
+            }, 7000);
         }
 
         // Initializes the carousel and modal when the window loads
